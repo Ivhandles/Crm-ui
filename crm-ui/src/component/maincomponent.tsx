@@ -1,4 +1,4 @@
-import { Divider } from 'antd'
+import { Divider, Switch } from 'antd'
 import AddFileIcon from '../assets/Icons/AddFileIcon'
 import AddUserIcon from '../assets/Icons/AddUserIcon'
 import CallerIcon from '../assets/Icons/CallerIcon'
@@ -7,6 +7,8 @@ import HourGlassIcon from '../assets/Icons/HourGlassIcon'
 import HuluIcon from '../assets/Icons/HuluIcon'
 import ImageIcon from '../assets/Icons/ImageIcon'
 import './maincomponent.scss'
+import BotIcon from '../assets/Icons/BotIcon'
+import SpeakerIcon from '../assets/Icons/SpeakerIcon'
 
 function maincomponent() {
   return (
@@ -49,34 +51,57 @@ function maincomponent() {
         </div>
         <Divider />
 
-        <div className="flex-container">
-  <div className="text">
-    ...........................................................
-  </div>
-  <div className="inner-container">
-    <div className="sender-info">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/0cbb8f758ea5f4b7c207fe080d441f789746e311d710fa240ab843ffbe4fd2cc?apiKey=ebc80f033136493da2640672a3707428&"
-        alt="Sender Icon"
-      />
-      <div className="sender-details">
-        <div className="send-by">Send By</div>
-        <div className="bot-name">Helper Bot</div>
-      </div>
-    </div>
-    <div className="indicator">
-      <div className="indicator-bar"></div>
-    </div>
-  </div>
-  <div class="text">
-    ...........................................................
-  </div>
-</div>
+        <div className="helper-bot-div">
+          <div className="helper-bot-text">
+            ...........................................................
+          </div>
+          <div className="helper-bot-inner-container">
+            <div className="helper-bot-sender-info">
+              <div className="helper-bot-sender-info-img">
+                <BotIcon />
+              </div>
+              <div className="helper-bot-sender-details">
+                <div className="helper-bot-send-by">Send By</div>
+                <div className="helper-bot-name">Helper Bot</div>
+              </div>
+            </div>
+            <div className="helper-bot-indicator">
+              <Switch />
+            </div>
+          </div>
+          <div className="helper-bot-text">
+            ...........................................................
+          </div>
+        </div>
 
+        <div className="user-info-div">
+          <div className="username-div"> Mr. Tony Stark</div>
+          <div className="time-div">03:47pm</div>
+        </div>
+        <div className="user-msg-div">
+          <p className="user-msg-text-div">Hey there ..</p>
+          <p className="user-msg-text-div">
+            Not happy with your credit card services as I am not getting loyalty points since last 3
+            months.
+          </p>
+        </div>
+        <div className="user-msg-div-2">
+          <p className="user-msg-text-div-2">
+            and also I want to change my name on my credit card as it is got misprinted.
+          </p>
+        </div>
 
+        <div className="msg-input-container">
+          <div className="msg-input-container-text">Please type your message</div>
+          <div className="msg-input-container-img">
+            {' '}
+            <SpeakerIcon />
+          </div>
+        </div>
       </div>
       <div className="content-div">eew</div>
+
+      
     </div>
   )
 }
