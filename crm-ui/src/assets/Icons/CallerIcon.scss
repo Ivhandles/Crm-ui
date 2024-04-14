@@ -1,0 +1,24 @@
+.timer-container {
+  display: grid;
+  position: relative;
+  justify-content: center; /* Align horizontally */
+  align-items: center; /* Align vertically */
+  width: 100px;
+  height: 50px;
+  padding-left: 1.2rem;
+  background-size: cover; /* Ensure the image covers the container */
+}
+
+#timer {
+  position: absolute; /* Make the timer element absolute */
+  top: 45%; /* Position it vertically at 50% */
+  transform: translateY(-50%); /* Offset it upwards for centering */
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 1rem;
+  color: white;
+}
+#img {
+  margin-right: 1rem;
+}
