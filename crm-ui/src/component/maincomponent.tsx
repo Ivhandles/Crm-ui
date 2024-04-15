@@ -12,10 +12,14 @@ import SpeakerIcon from '../assets/Icons/SpeakerIcon'
 import SearchIcon from '../assets/Icons/SearchIcon'
 import { useState } from 'react'
 import UserIcon from '../assets/Icons/UserIcon'
+import DownwardIcon from '../assets/Icons/DownwardIcon'
+import AmazonIcon from '../assets/Icons/AmazonIcon'
+import AutoPayIcon from '../assets/Icons/AutoPayIcon'
+import MSwipeIcon from '../assets/Icons/MSwipeIcon'
 
 function maincomponent() {
-  const [searchActive,] = useState(false);
-  const [username,] = useState("Natasha")
+  const [searchActive] = useState(false)
+  const [username] = useState('Natasha')
   return (
     <div className="main-div">
       <div className="sidebar-div">
@@ -104,7 +108,6 @@ function maincomponent() {
         </div>
       </div>
       <div className="content-div">
-       
         <div className="head-search-container">
           <div className="head-img-container ">
             <SearchIcon />
@@ -115,17 +118,79 @@ function maincomponent() {
             placeholder="Type search parameter (Account, CTN, BAN etc.)"
             className={`head-text-container ${searchActive ? 'search-active' : ''}`}
             style={{ color: searchActive ? 'black' : 'white' }}
-        />
+          />
 
-        
-        <div className="head-user-container">
-          <div><UserIcon/></div>
-          <div className="head-username-text">{username}</div>
+          <div className="head-user-container">
+            <div>
+              <UserIcon />
+            </div>
+            <div className="head-username-text">{username}</div>
+          </div>
         </div>
+        <div className="sub-data-container">
+          <div className="sub-data-inner-container">
+            <div className="sub-data-gap-container">
+              <div className="line"></div>
+              <div className="sub-dataleft-content">
+                <div className="left-image-container">
+                  <div className="left-user-text">Mr. John Stanely</div>
+                  <div className="downward-icon-styles">
+                    <DownwardIcon />
+                  </div>
+                </div>
+                <div className="left-text-container">
+                  <div className="left-subtext">ACC: 234891389</div>
+                  <div className="tag-lc">LOYAL CUSTOMER</div>
+                </div>
+              </div>
+              <div className="tag-fc">FREQUENT CALLER</div>
+              <div className="right-content">
+                <div className="amount-container">
+                  <div className="amount">
+                    <div className="amount-symbol-styles">$</div>
+                    <div className="amount-value">190</div>
+                  </div>
+                  <div className="subtext">Amount Due</div>
+                </div>
+                <div className="immediate-amount-container">
+                <div className="amount">
+                    <div className="amount-symbol-styles">$</div>
+                    <div className="amount-value">25</div>
+                  </div>
+                  <div className="subtext"> Due Immediately</div>
+                </div>
+                <div className="immediate-amount-container">
+                <div className="amount">
+                    
+                    <div className="amount-value">03</div>
+                  </div>
+                  <div className="subtext"> Due Days Left</div>
+                </div>
+                <div className="immediate-amount-container">
+                <div className="amount">
+                    
+                    <div className="amount-value">04</div>
+                  </div>
+                  <div className="subtext"> Active Lines</div>
+                </div>
+                <MSwipeIcon/>
+                <div>
+                  <AutoPayIcon />
+                  <div className="subtext">AutoPay</div>
+                </div>
+                <div>0</div>
+                <div className="subtext">Open Cases</div>
+                <AmazonIcon />
+              </div>
+            </div>
+          
+           
+          </div>
+         
         </div>
-        </div>
-      
-      <footer className="footer-styles">thus is footer</footer>
+
+        <footer className="footer-styles">thus is footer</footer>
+      </div>
     </div>
   )
 }
