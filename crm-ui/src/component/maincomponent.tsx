@@ -9,8 +9,13 @@ import ImageIcon from '../assets/Icons/ImageIcon'
 import './maincomponent.scss'
 import BotIcon from '../assets/Icons/BotIcon'
 import SpeakerIcon from '../assets/Icons/SpeakerIcon'
+import SearchIcon from '../assets/Icons/SearchIcon'
+import { useState } from 'react'
+import UserIcon from '../assets/Icons/UserIcon'
 
 function maincomponent() {
+  const [searchActive,] = useState(false);
+  const [username,] = useState("Natasha")
   return (
     <div className="main-div">
       <div className="sidebar-div">
@@ -92,16 +97,35 @@ function maincomponent() {
         </div>
 
         <div className="msg-input-container">
-          <div className="msg-input-container-text">Please type your message</div>
+          <input className="msg-input-container-text" placeholder="Please Enter your message" />
           <div className="msg-input-container-img">
-            {' '}
             <SpeakerIcon />
           </div>
         </div>
       </div>
-      <div className="content-div">eew</div>
+      <div className="content-div">
+       
+        <div className="head-search-container">
+          <div className="head-img-container ">
+            <SearchIcon />
+          </div>
 
+          <input
+            type="text"
+            placeholder="Type search parameter (Account, CTN, BAN etc.)"
+            className={`head-text-container ${searchActive ? 'search-active' : ''}`}
+            style={{ color: searchActive ? 'black' : 'white' }}
+        />
+
+        
+        <div className="head-user-container">
+          <div><UserIcon/></div>
+          <div className="head-username-text">{username}</div>
+        </div>
+        </div>
+        </div>
       
+      <footer className="footer-styles">thus is footer</footer>
     </div>
   )
 }
