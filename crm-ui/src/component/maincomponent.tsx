@@ -144,54 +144,122 @@ function maincomponent() {
                 </div>
               </div>
               <div className="tag-fc">FREQUENT CALLER</div>
-              <div className="right-content">
-                <div className="amount-container">
+              <div className="sub-data-right-container">
+                <div className="sub-data-right-item">
                   <div className="amount">
-                    <div className="amount-symbol-styles">$</div>
-                    <div className="amount-value">190</div>
+                    <div className="currency">$</div>
+                    <div className="value">190</div>
                   </div>
-                  <div className="subtext">Amount Due</div>
+                  <div className="description">Amount Due</div>
                 </div>
-                <div className="immediate-amount-container">
-                <div className="amount">
-                    <div className="amount-symbol-styles">$</div>
-                    <div className="amount-value">25</div>
+                <div className="sub-data-right-item">
+                  <div className="amount">
+                    <div className="currency">$</div>
+                    <div className="value">25</div>
                   </div>
-                  <div className="subtext"> Due Immediately</div>
+                  <div className="description">Due Immediately</div>
                 </div>
-                <div className="immediate-amount-container">
-                <div className="amount">
-                    
-                    <div className="amount-value">03</div>
+                <div className="sub-data-right-item">
+                  <div className="amount">
+                    <div className="value">03</div>
                   </div>
-                  <div className="subtext"> Due Days Left</div>
+                  <div className="description">Due Days Left</div>
                 </div>
-                <div className="immediate-amount-container">
-                <div className="amount">
-                    
-                    <div className="amount-value">04</div>
+                <div className="sub-data-right-item">
+                  <div className="amount">
+                    <div className="value">04</div>
                   </div>
-                  <div className="subtext"> Active Lines</div>
+                  <div className="description">Active Lines</div>
                 </div>
-                <MSwipeIcon/>
-                <div>
-                  <AutoPayIcon />
-                  <div className="subtext">AutoPay</div>
+                <div className="sub-data-right-item">
+                  <div className="amount">
+                    <div className="value"><MSwipeIcon/></div>
+                  </div>
+                  <div className="description">mSwipe</div>
                 </div>
-                <div>0</div>
-                <div className="subtext">Open Cases</div>
-                <AmazonIcon />
+                <div className="sub-data-right-item">
+                  <div className="amount">
+                    <div className="value"><AutoPayIcon/></div>
+                  </div>
+                  <div className="description">AutoPay</div>
+                </div>
+                <div className="sub-data-right-item">
+                  <div className="amount">
+                    <div className="value">0</div>
+                  </div>
+                  <div className="description">Open Cases</div>
+                </div>
+                <div className="sub-data-right-item">
+                  <div className="amount">
+                    <div className="value">
+                      <AmazonIcon />
+                    </div>
+                  </div>
+                  <div className="description">amazon</div>
+                </div>
               </div>
+              
+</div>
+<div className="custom-container">
+  <div className="custom-flex">
+    <div className="custom-item custom-flex-col">
+      <div className="inner-item">
+        <div className="container">
+          <div className="title">Contact Details</div>
+          <div className="content">
+            <div className="info">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&" alt="Email" />
+              <span className="label">John.stanely@starkvalue.com</span><br />
+              10880 Malibu Point, 90265,<br />
+              California, USA
             </div>
-          
-           
           </div>
-         
+        </div>
+      </div>
+      <div className="inner-item">
+        <div className="container">
+          <div className="title">Contact Details</div>
+          <div className="content">
+            <div className="info">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&" alt="Email" />
+              <span className="label">John.stanely@starkvalue.com</span><br />
+              10880 Malibu Point, 90265,<br />
+              California, USA
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="inner-item">
+        <div className="container">
+          <div className="title">Contact Details</div>
+          <div className="content">
+            <div className="info">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&" alt="Email" />
+              <span className="label">John.stanely@starkvalue.com</span><br />
+              10880 Malibu Point, 90265,<br />
+              California, USA
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="links">
+      <div className="link">Setup Auto Pay</div>
+      <div className="link">Set Up QuickPay</div>
+      <div className="link">Bill Pay Methods</div>
+      <div className="link">Suspend & Restore Service</div>
+      <div className="link">Charges & Fees</div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
         </div>
 
         <footer className="footer-styles">thus is footer</footer>
       </div>
-    </div>
+   
   )
 }
 

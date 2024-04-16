@@ -300,8 +300,8 @@
 
         .sub-data-gap-container {
           display: flex;
-          gap: 1.25rem; /* equivalent to gap-5 in Tailwind */
-          justify-content: space-between;
+          gap: 1rem; /* equivalent to gap-5 in Tailwind */
+
           width: 100%;
 
           @media (max-width: 767px) {
@@ -320,12 +320,12 @@
             .left-image-container {
               display: flex;
 
-              gap: 0.9rem;
+              gap: 0.5rem;
 
               .left-user-text {
                 color: var(--Neutral-13, #000);
                 font-family: 'Poppins', sans-serif;
-                font-size: 16px;
+                font-size: 0.875rem;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 30px; /* 187.5% */
@@ -338,9 +338,10 @@
             }
             .left-text-container {
               display: flex;
+              align-items: center;
 
               .left-subtext {
-                font-size: 0.875rem;
+                font-size: 0.75rem;
                 font-weight: 500;
                 line-height: 1.25rem;
                 color: #3b82f6;
@@ -350,14 +351,17 @@
                 background: var(--Calendula-Gold-gold-6, #faad14);
                 box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
                 font-family: 'Poppins', sans-serif;
-                font-size: 11px;
+                font-size: 0.5rem;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-                letter-spacing: 0.22px;
-                width: 7rem;
-                padding: 0.1rem;
+                width: 5rem;
+                height: 0.6rem;
+                padding: 0.2rem;
+                margin-left: -1.2rem;
+
                 text-align: center;
+                color: white;
               }
             }
           }
@@ -369,7 +373,7 @@
             font-size: 0.625rem;
             font-weight: 500;
             height: 1rem;
-            width: 7.5rem;
+            margin-left: -0.3rem;
             text-transform: uppercase;
             letter-spacing: 0.025em;
             color: #3b82f6;
@@ -377,62 +381,150 @@
             border: 1px solid #3b82f6;
             border-radius: 0.25rem;
           }
-          .right-content {
+          .sub-data-right-container {
             display: flex;
-            flex-direction: row;
-            margin-right: 3.75rem; /* equivalent to pr-20 in Tailwind */
+            flex-wrap: wrap;
+            text-align: center;
 
-            @media (max-width: 767px) {
-              margin-right: 0;
-            }
+            gap: 1rem;
+          }
+          .sub-data-right-item{
+            display: flex;
+            flex-direction: column;
+            padding: 0.2125rem 0.125rem; /* equivalent to px-5 py-1.5 in Tailwind */
+          }
 
-            .amount-container {
-              display: flex;
-              width: 7rem;
-              flex-direction: column;
-              align-items: center;
-            }
-            .immediate-amount-container
-            {
-              display: flex;
-              width: 8rem;
-              flex-direction: column;
-              align-items: center;
-            }
-              .amount {
-                font-size: 0.875rem; /* equivalent to text-base in Tailwind */
-                font-weight: 500; /* equivalent to font-medium in Tailwind */
-                line-height: 1.5rem; /* equivalent to leading-6 in Tailwind */
-                color: #3b82f6;
-                display: flex;
-                .amount-symbol-styles {
-                  color: var(--Neutral-7, #8c8c8c);
-                  font-family: Poppins;
-                  font-size: 18px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: 24px; /* 133.333% */
-                }
-
-                .amount-value {
-                  margin-top: 0.1rem;
-                  color: #3a7ced;
-                  font-family: Poppins;
-                  font-size: 18px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 24px; /* 85.714% */
-                }
-                .sub-text
-                {
-                  font-size: .75rem;
-                }
-              }
+          .mswipe-item {
+            .mswipe-description {
+              margin-top: -1.25rem;
+              font-size: 0.675rem;
+              margin-left: 1rem;
             }
           }
+          .sub-data-right-item.amount {
+            display: flex;
+            gap: 0.375rem; /* equivalent to gap-2 in Tailwind */
+            white-space: nowrap; /* equivalent to whitespace-nowrap in Tailwind */
+          }
+
+          .sub-data-right-item .amount .currency {
+            /* equivalent to text-lg in Tailwind */
+            line-height: 1.5rem; /* equivalent to leading-6 in Tailwind */
+            color: #a0aec0; /* equivalent to text-neutral-400 in Tailwind */
+          }
+
+          .sub-data-right-item .amount .value {
+            font-size: 1.2rem; /* equivalent to text-3xl in Tailwind */
+            font-weight: 500; /* equivalent to font-medium in Tailwind */
+            line-height: 2.25rem; /* equivalent to leading-6 in Tailwind */
+            color: #4299e1; /* equivalent to text-blue-500 in Tailwind */
+          }
+          .amount {
+            margin-left: 1rem;
+            display: flex;
+            gap: .3rem;
+          }
+          .sub-data-right-item .description {
+            /* equivalent to mt-3.5 in Tailwind */
+            font-size: 0.675rem; /* equivalent to text-xs in Tailwind */
+            line-height: 1.5rem; /* equivalent to leading-6 in Tailwind */
+            color: #4a5568; /* equivalent to text-neutral-800 in Tailwind */
+          }
+
+          .sub-data-right-item img {
+            width: 3.3125rem; /* equivalent to w-[53px] in Tailwind */
+          }
+
+          .custom-auto-pay {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0.875rem; /* equivalent to mt-3.5 in Tailwind */
+            font-size: 0.875rem; /* equivalent to text-xs in Tailwind */
+            line-height: 1.5rem; /* equivalent to leading-6 in Tailwind */
+            color: #4a5568; /* equivalent to text-neutral-800 in Tailwind */
+          }
+
+          .custom-auto-pay img {
+            width: 1.5625rem; /* equivalent to w-8 in Tailwind */
+            aspect-ratio: 1; /* equivalent to aspect-square in Tailwind */
+          }
         }
+        .custom-container {
+          padding: 0 1.25rem; /* equivalent to px-5 in Tailwind */
+        }
+        
+        .custom-flex {
+          display: flex;
+          gap: 1.25rem; /* equivalent to gap-5 in Tailwind */
+        }
+        
+        .custom-flex-col {
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .custom-item {
+          flex: 1;
+          width: 84%; /* equivalent to w-[84%] in Tailwind */
+          margin-left: 0;
+          flex-direction: row;
+        }
+        
+        .custom-item:nth-child(2) {
+          margin-left: 1.25rem; /* equivalent to ml-5 in Tailwind */
+        }
+        
+        .custom-item .inner-item {
+          flex: 1;
+          
+        }
+        
+        .custom-item .inner-item .container {
+          flex-grow: 1;
+          padding: 1.25rem 1.25rem 1.875rem; /* equivalent to px-5 py-5 in Tailwind */
+          background-color: #fff; /* equivalent to bg-white in Tailwind */
+          border-radius: 0.375rem; /* equivalent to rounded in Tailwind */
+        }
+        
+        .custom-item .inner-item .container .title {
+          font-size: 0.875rem; /* equivalent to text-sm in Tailwind */
+          font-weight: 500; /* equivalent to font-medium in Tailwind */
+          line-height: 1.75rem; /* equivalent to leading-7 in Tailwind */
+          text-transform: capitalize;
+          color: #000; /* equivalent to text-black in Tailwind */
+        }
+        
+        .custom-item .inner-item .container .content {
+          margin-top: 1.25rem; /* equivalent to mt-5 in Tailwind */
+        }
+        
+        .custom-item .inner-item .container .content .info {
+          font-size: 0.75rem; /* equivalent to text-xs in Tailwind */
+          line-height: 1.75rem; /* equivalent to leading-7 in Tailwind */
+          color: #4a5568; /* equivalent to text-stone-900 in Tailwind */
+        }
+        
+        .custom-item .inner-item .container .content .info .label {
+          font-weight: 500; /* equivalent to font-medium in Tailwind */
+          color: #4299e1; /* equivalent to text-blue-500 in Tailwind */
+        }
+        
+        .custom-item .links {
+          width: 16%; /* equivalent to w-[16%] in Tailwind */
+          margin-left: 0;
+          margin-top: 1.25rem; /* equivalent to mt-10 in Tailwind */
+        }
+        
+        .custom-item .links .link {
+          font-size: 0.625rem; /* equivalent to text-xs in Tailwind */
+          line-height: 1.75rem; /* equivalent to leading-7 in Tailwind */
+          text-decoration: underline;
+          color: #84cc16; /* equivalent to text-lime-950 in Tailwind */
+        }
+        
       }
-    
+    }
 
     .text {
       flex-grow: 1;
