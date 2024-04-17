@@ -16,6 +16,8 @@ import DownwardIcon from '../assets/Icons/DownwardIcon'
 import AmazonIcon from '../assets/Icons/AmazonIcon'
 import AutoPayIcon from '../assets/Icons/AutoPayIcon'
 import MSwipeIcon from '../assets/Icons/MSwipeIcon'
+import MailIcon from '../assets/Icons/MailIcon'
+import AddressIcon from '../assets/Icons/AddressIcon'
 
 function maincomponent() {
   const [searchActive] = useState(false)
@@ -153,113 +155,154 @@ function maincomponent() {
                   <div className="description">Amount Due</div>
                 </div>
                 <div className="sub-data-right-item">
-                  <div className="amount">
+                  <div className="due-amount">
                     <div className="currency">$</div>
                     <div className="value">25</div>
                   </div>
                   <div className="description">Due Immediately</div>
                 </div>
                 <div className="sub-data-right-item">
-                  <div className="amount">
+                  <div className="day-amount">
                     <div className="value">03</div>
                   </div>
                   <div className="description">Due Days Left</div>
                 </div>
                 <div className="sub-data-right-item">
-                  <div className="amount">
+                  <div className="active-amount">
                     <div className="value">04</div>
                   </div>
                   <div className="description">Active Lines</div>
                 </div>
                 <div className="sub-data-right-item">
                   <div className="amount">
-                    <div className="value"><MSwipeIcon/></div>
+                    <div className="value">
+                      <MSwipeIcon />
+                    </div>
                   </div>
-                  <div className="description">mSwipe</div>
+                  <div className="mswipe-description">mSwipe</div>
                 </div>
                 <div className="sub-data-right-item">
                   <div className="amount">
-                    <div className="value"><AutoPayIcon/></div>
+                    <div className="autopay-value">
+                      <AutoPayIcon />
+                    </div>
                   </div>
-                  <div className="description">AutoPay</div>
+                  <div className="autopay-description">AutoPay</div>
                 </div>
                 <div className="sub-data-right-item">
                   <div className="amount">
-                    <div className="value">0</div>
+                    <div className="case-value">0</div>
                   </div>
                   <div className="description">Open Cases</div>
                 </div>
                 <div className="sub-data-right-item">
                   <div className="amount">
-                    <div className="value">
+                    <div className="amazon-value">
                       <AmazonIcon />
                     </div>
                   </div>
-                  <div className="description">amazon</div>
+                  <div className="amazon-description">Amazon</div>
                 </div>
               </div>
-              
-</div>
-<div className="custom-container">
-  <div className="custom-flex">
-    <div className="custom-item custom-flex-col">
-      <div className="inner-item">
-        <div className="container">
-          <div className="title">Contact Details</div>
-          <div className="content">
-            <div className="info">
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&" alt="Email" />
-              <span className="label">John.stanely@starkvalue.com</span><br />
-              10880 Malibu Point, 90265,<br />
-              California, USA
+            </div>
+            <div className="bank-details-container">
+              <div className="bank-details-flex">
+                <div className="bank-details-custom-flex-col">
+                  <div className="bank-details-inner-item">
+                    <div className="bank-details-container">
+                      <div  className="bank-details-title">Contact Details</div>
+                      <div className="details-div">
+                        <div className="bank-mail-div">
+                          <MailIcon />
+                        </div>
+                        <div className="bank-user-div">John.stanely@starkvalue.com</div>
+                      </div>
+                      <div className="details-div">
+                        <div className="bank-mail-div">
+                          <AddressIcon />
+                        </div>
+                        <div className="bank-user-div">
+                          10880 Malibu Point, 90265, California, USA
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bank-details-container">
+                      <div className="bank-details-title">Account No : 234891389</div>
+                     
+                       <div className="account-div">
+                       <div className="bank-user-div">Balance : $5120.90</div>
+                        <div className="bank-user-div">Type : Individual / Savings</div>
+                        <div className="bank-user-div">Status : Active</div>
+                      
+                       </div>
+                       
+                     
+                    </div>
+                    <div className="bank-details-container">
+                      <div className="bank-account-title">Payments</div>
+                      <div className="bank-account-details-div">
+                        
+                        <div className="bank-user-div">Next EMI Bill Cycle Date : 21 / 09 / 2024</div>
+                        <div className="bank-user-div">Next Payment Amount : $25</div>
+                        <div className="bank-user-div">Last Payment Channel : mSwipe</div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  {/* <div className="inner-item">
+                    <div className="container">
+                      <div className="title">Account</div>
+                      <div className="content">
+                        <div className="info">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&"
+                            alt="Email"
+                          />
+                          <span className="label">John.stanely@starkvalue.com</span>
+                          <br />
+                          10880 Malibu Point, 90265,
+                          <br />
+                          California, USA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="inner-item">
+                    <div className="container">
+                      <div className="title">Contact Details</div>
+                      <div className="content">
+                        <div className="info">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&"
+                            alt="Email"
+                          />
+                          <span className="label">John.stanely@starkvalue.com</span>
+                          <br />
+                          10880 Malibu Point, 90265,
+                          <br />
+                          California, USA
+                        </div>
+                      </div>
+                    </div>
+                  </div> */}
+                </div>
+                {/* <div className="links">
+                  <div className="link">Setup Auto Pay</div>
+                  <div className="link">Set Up QuickPay</div>
+                  <div className="link">Bill Pay Methods</div>
+                  <div className="link">Suspend & Restore Service</div>
+                  <div className="link">Charges & Fees</div>
+                </div> */}
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="inner-item">
-        <div className="container">
-          <div className="title">Contact Details</div>
-          <div className="content">
-            <div className="info">
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&" alt="Email" />
-              <span className="label">John.stanely@starkvalue.com</span><br />
-              10880 Malibu Point, 90265,<br />
-              California, USA
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="inner-item">
-        <div className="container">
-          <div className="title">Contact Details</div>
-          <div className="content">
-            <div className="info">
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&" alt="Email" />
-              <span className="label">John.stanely@starkvalue.com</span><br />
-              10880 Malibu Point, 90265,<br />
-              California, USA
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="links">
-      <div className="link">Setup Auto Pay</div>
-      <div className="link">Set Up QuickPay</div>
-      <div className="link">Bill Pay Methods</div>
-      <div className="link">Suspend & Restore Service</div>
-      <div className="link">Charges & Fees</div>
-    </div>
-  </div>
-</div>
 
-            </div>
-          </div>
-        </div>
-
-        <footer className="footer-styles">thus is footer</footer>
-      </div>
-   
+      <footer className="footer-styles">thus is footer</footer>
+    </div>
   )
 }
 
