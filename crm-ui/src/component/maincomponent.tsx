@@ -1,4 +1,4 @@
-import { Divider, Switch } from 'antd'
+import { Divider, Switch, Tabs } from 'antd'
 import AddFileIcon from '../assets/Icons/AddFileIcon'
 import AddUserIcon from '../assets/Icons/AddUserIcon'
 import CallerIcon from '../assets/Icons/CallerIcon'
@@ -20,7 +20,17 @@ import MailIcon from '../assets/Icons/MailIcon'
 import AddressIcon from '../assets/Icons/AddressIcon'
 
 function maincomponent() {
-  const [searchActive] = useState(false)
+  const [searchActive] = useState(false);
+  const storedActiveKey = localStorage.getItem("activeTab") || "1";
+  const [activeKey, setActiveKey] = useState(storedActiveKey);
+  const tabs = [
+    { key: "1", tab: "Integration", label: "Integration" },
+    { key: "2", tab: "Fallout", label: "Fallout" },
+  ];
+  const onChange = (key: string) => {
+    setActiveKey(key);
+    localStorage.setItem("activeTab", key);
+  };
   const [username] = useState('Natasha')
   return (
     <div className="main-div">
@@ -264,6 +274,103 @@ function maincomponent() {
             </div>
           </div>
         </div>
+    
+    
+        <div className="div">
+  <div className="div-2">
+    <div className="div-3">
+      Unlock
+      <br />
+      Account
+    </div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&"
+      className="img"
+    />
+  </div>
+  <div className="div-4">
+    <div className="div-5">
+      Unlock
+      <br />
+      Card
+    </div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&"
+      className="img-2"
+    />
+  </div>
+  <div className="div-6">
+    <div className="div-7">Reset Internet Banking Password</div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&"
+      className="img-3"
+    />
+  </div>
+</div>
+<Tabs
+          defaultActiveKey={activeKey}
+          onChange={onChange}
+          animated={false}
+          moreIcon={<span className="more-icon"></span>}
+          items={tabs}
+        >
+          {tabs.map((tab) => (
+            <Tabs.TabPane key={tab.key} tab={tab.tab} />
+          ))}
+        </Tabs>
+        <div className="div">
+  <div className="div-2">
+    <div className="column">
+      <div className="div-3">
+        <div className="div-4">
+          Number of accounts
+          <br />
+          Account credit available
+          <br />
+          Account type
+          <br />
+          Marketing preferences
+          <br />
+        </div>
+        <div className="div-5">
+          : 4
+          <br />
+          : $ 5120.90
+          <br />
+          : Individual / Savings
+          <br />
+          : Yes
+          <br />
+        </div>
+      </div>
+    </div>
+    <div className="column-2">
+      <div className="div-6">
+        <div className="div-7">
+          Last transaction
+          <br />
+          Payment date
+          <br />
+          Customer since
+          <br />
+          Preferred payment type
+        </div>
+        <div className="div-8">
+          : 30 Aug 2023
+          <br />
+          : 03 Sep 2023
+          <br />
+          : 19 Dec 2019
+          <br />
+          : Credit Card, mSwipe
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
 
       <footer className="footer-styles">thus is footer</footer>
