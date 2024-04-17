@@ -226,7 +226,7 @@ function maincomponent() {
                         </div>
                       </div>
                     </div>
-                    <div className="bank-details-container">
+                    <div className="bank-account-container">
                       <div className="bank-details-title">Account No : 234891389</div>
                      
                        <div className="account-div">
@@ -238,7 +238,7 @@ function maincomponent() {
                        
                      
                     </div>
-                    <div className="bank-details-container">
+                    <div className="bank-payment-container">
                       <div className="bank-account-title">Payments</div>
                       <div className="bank-account-details-div">
                         
@@ -249,52 +249,17 @@ function maincomponent() {
                      
                     </div>
                   </div>
-                  {/* <div className="inner-item">
-                    <div className="container">
-                      <div className="title">Account</div>
-                      <div className="content">
-                        <div className="info">
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&"
-                            alt="Email"
-                          />
-                          <span className="label">John.stanely@starkvalue.com</span>
-                          <br />
-                          10880 Malibu Point, 90265,
-                          <br />
-                          California, USA
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="inner-item">
-                    <div className="container">
-                      <div className="title">Contact Details</div>
-                      <div className="content">
-                        <div className="info">
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7bd470e09e70b0a324753206b688e5c0220f53020270630c394a97ef65551eb?apiKey=ebc80f033136493da2640672a3707428&"
-                            alt="Email"
-                          />
-                          <span className="label">John.stanely@starkvalue.com</span>
-                          <br />
-                          10880 Malibu Point, 90265,
-                          <br />
-                          California, USA
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
+                 
                 </div>
-                {/* <div className="links">
-                  <div className="link">Setup Auto Pay</div>
-                  <div className="link">Set Up QuickPay</div>
-                  <div className="link">Bill Pay Methods</div>
-                  <div className="link">Suspend & Restore Service</div>
-                  <div className="link">Charges & Fees</div>
-                </div> */}
+                <ul className="links-list">
+                  <li className="link">Setup Auto Pay</li>
+                  <li className="link">Set Up QuickPay</li>
+                  <li className="link">Bill Pay Methods</li>
+                  <li className="link">Suspend & Restore Service</li>
+                  <li className="link">Charges & Fees</li>
+                </ul>
+                <div className="custom-div"><p className="dotted-text">Promotional Banner</p></div>
+
               </div>
             </div>
           </div>
