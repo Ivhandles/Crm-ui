@@ -18,19 +18,22 @@ import AutoPayIcon from '../assets/Icons/AutoPayIcon'
 import MSwipeIcon from '../assets/Icons/MSwipeIcon'
 import MailIcon from '../assets/Icons/MailIcon'
 import AddressIcon from '../assets/Icons/AddressIcon'
+import UnLockIcon from '../assets/Icons/UnLockIcon'
+import UnLockCardIcon from '../assets/Icons/UnLockCardIcon'
+import ResetPasswordIcon from '../assets/Icons/ResetPasswordIcon'
 
 function maincomponent() {
-  const [searchActive] = useState(false);
-  const storedActiveKey = localStorage.getItem("activeTab") || "1";
-  const [activeKey, setActiveKey] = useState(storedActiveKey);
+  const [searchActive] = useState(false)
+  const storedActiveKey = localStorage.getItem('activeTab') || '1'
+  const [activeKey, setActiveKey] = useState(storedActiveKey)
   const tabs = [
-    { key: "1", tab: "Integration", label: "Integration" },
-    { key: "2", tab: "Fallout", label: "Fallout" },
-  ];
+    { key: '1', tab: 'Integration', label: 'Integration' },
+    { key: '2', tab: 'Fallout', label: 'Fallout' },
+  ]
   const onChange = (key: string) => {
-    setActiveKey(key);
-    localStorage.setItem("activeTab", key);
-  };
+    setActiveKey(key)
+    localStorage.setItem('activeTab', key)
+  }
   const [username] = useState('Natasha')
   return (
     <div className="main-div">
@@ -220,7 +223,7 @@ function maincomponent() {
                 <div className="bank-details-custom-flex-col">
                   <div className="bank-details-inner-item">
                     <div className="bank-details-container">
-                      <div  className="bank-details-title">Contact Details</div>
+                      <div className="bank-details-title">Contact Details</div>
                       <div className="details-div">
                         <div className="bank-mail-div">
                           <MailIcon />
@@ -238,28 +241,24 @@ function maincomponent() {
                     </div>
                     <div className="bank-account-container">
                       <div className="bank-details-title">Account No : 234891389</div>
-                     
-                       <div className="account-div">
-                       <div className="bank-user-div">Balance : $5120.90</div>
+
+                      <div className="account-div">
+                        <div className="bank-user-div">Balance : $5120.90</div>
                         <div className="bank-user-div">Type : Individual / Savings</div>
                         <div className="bank-user-div">Status : Active</div>
-                      
-                       </div>
-                       
-                     
+                      </div>
                     </div>
                     <div className="bank-payment-container">
                       <div className="bank-account-title">Payments</div>
                       <div className="bank-account-details-div">
-                        
-                        <div className="bank-user-div">Next EMI Bill Cycle Date : 21 / 09 / 2024</div>
+                        <div className="bank-user-div">
+                          Next EMI Bill Cycle Date : 21 / 09 / 2024
+                        </div>
                         <div className="bank-user-div">Next Payment Amount : $25</div>
                         <div className="bank-user-div">Last Payment Channel : mSwipe</div>
                       </div>
-                     
                     </div>
                   </div>
-                 
                 </div>
                 <ul className="links-list">
                   <li className="link">Setup Auto Pay</li>
@@ -268,49 +267,37 @@ function maincomponent() {
                   <li className="link">Suspend & Restore Service</li>
                   <li className="link">Charges & Fees</li>
                 </ul>
-                <div className="custom-div"><p className="dotted-text">Promotional Banner</p></div>
-
+                <div className="custom-div">
+                  <p className="dotted-text">Promotional Banner</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-    
-    
-        <div className="div">
-  <div className="div-2">
-    <div className="div-3">
-      Unlock
-      <br />
-      Account
-    </div>
-    <img
-      loading="lazy"
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b42afac3d3853df5370090aa996717984b106ac8f55b593426bf61374620242b?apiKey=ebc80f033136493da2640672a3707428&"
-      className="img"
-    />
-  </div>
-  <div className="div-4">
-    <div className="div-5">
-      Unlock
-      <br />
-      Card
-    </div>
-    <img
-      loading="lazy"
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6bf0165b5458d6c5f38346b91cc772a48a449f974c452d41ac17d79eed3701fa?apiKey=ebc80f033136493da2640672a3707428&"
-      className="img-2"
-    />
-  </div>
-  <div className="div-6">
-    <div className="div-7">Reset Internet Banking Password</div>
-    <img
-      loading="lazy"
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9ac522a23303f21ba2892f49322170f5d4e441d3ab3cb9a0cab84914e300aa5d?apiKey=ebc80f033136493da2640672a3707428&"
-      className="img-3"
-    />
-  </div>
-</div>
-<Tabs
+
+        <div className="small-card-div">
+          <div className="small-card-div-2">
+            <div className="small-card-div-3">
+              Unlock
+              <br />
+              Account
+            </div>
+            <UnLockIcon/>
+          </div>
+          <div className="small-card-div-4">
+            <div className="small-card-div-5">
+              Unlock
+              <br />
+              Card
+            </div>
+            <UnLockCardIcon/>
+          </div>
+          <div className="small-card-div-6">
+            <div className="small-card-div-7">Reset Internet Banking Password</div>
+            <ResetPasswordIcon/>
+          </div>
+        </div>
+        <Tabs
           defaultActiveKey={activeKey}
           onChange={onChange}
           animated={false}
@@ -322,55 +309,54 @@ function maincomponent() {
           ))}
         </Tabs>
         <div className="div">
-  <div className="div-2">
-    <div className="column">
-      <div className="div-3">
-        <div className="div-4">
-          Number of accounts
-          <br />
-          Account credit available
-          <br />
-          Account type
-          <br />
-          Marketing preferences
-          <br />
+          <div className="div-2">
+            <div className="column">
+              <div className="div-3">
+                <div className="div-4">
+                  Number of accounts
+                  <br />
+                  Account credit available
+                  <br />
+                  Account type
+                  <br />
+                  Marketing preferences
+                  <br />
+                </div>
+                <div className="div-5">
+                  : 4
+                  <br />
+                  : $ 5120.90
+                  <br />
+                  : Individual / Savings
+                  <br />
+                  : Yes
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div className="column-2">
+              <div className="div-6">
+                <div className="div-7">
+                  Last transaction
+                  <br />
+                  Payment date
+                  <br />
+                  Customer since
+                  <br />
+                  Preferred payment type
+                </div>
+                <div className="div-8">
+                  : 30 Aug 2023
+                  <br />
+                  : 03 Sep 2023
+                  <br />
+                  : 19 Dec 2019
+                  <br />: Credit Card, mSwipe
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="div-5">
-          : 4
-          <br />
-          : $ 5120.90
-          <br />
-          : Individual / Savings
-          <br />
-          : Yes
-          <br />
-        </div>
-      </div>
-    </div>
-    <div className="column-2">
-      <div className="div-6">
-        <div className="div-7">
-          Last transaction
-          <br />
-          Payment date
-          <br />
-          Customer since
-          <br />
-          Preferred payment type
-        </div>
-        <div className="div-8">
-          : 30 Aug 2023
-          <br />
-          : 03 Sep 2023
-          <br />
-          : 19 Dec 2019
-          <br />
-          : Credit Card, mSwipe
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
       </div>
 
       <footer className="footer-styles">thus is footer</footer>

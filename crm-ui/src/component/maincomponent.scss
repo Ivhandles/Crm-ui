@@ -16,7 +16,7 @@
       0px 6px 16px 0px rgba(0, 0, 0, 0.08);
     padding-left: 0.5rem;
     padding-top: 0.5rem;
-    height: 90%;
+   
     .sidebar-first-content-div {
       gap: 0.5rem;
       display: flex;
@@ -226,7 +226,8 @@
 
   .content-div {
     flex: 1;
-
+    overflow: scroll;
+    background-color: #edebe9;
     .head-search-container {
       display: flex;
       align-items: center;
@@ -288,11 +289,11 @@
       height: 56px !important;
       .sub-data-inner-container {
         display: flex;
-        border-bottom: 1px solid var(--Neutral-7, #8c8c8c);
+        border-bottom: 1px solid #8C8C8C;
         flex-direction: column;
         padding: 0.3rem 0.5rem 0.4rem; /* equivalent to px-8 pt-2 pb-6 in Tailwind */
         width: 100%;
-        background-color: #f0f4f8; /* equivalent to bg-zinc-100 in Tailwind */
+       
 
         @media (max-width: 767px) {
           padding: 0.5rem 2rem 1.5rem; /* equivalent to max-md:px-5 in Tailwind */
@@ -693,7 +694,109 @@
         }
       }
     }
- 
+    .small-card-div {
+      margin-top: 8.8rem;
+      display: flex;
+      gap: .625rem;
+      font-size: 12px;
+      color: var(--Neutral-13, #000);
+      font-weight: 400;
+      letter-spacing: .0375rem;
+      line-height: 1.125rem;
+      padding: 0 .625rem;
+      .small-card-div-2 {
+        border-radius: .125rem;
+        border-color: rgba(58, 124, 237, 1);
+        border-style: solid;
+        border-width: 1px;
+        background-color: #f5f5f5;
+        display: flex;
+        gap: 18px;
+        padding: 8px 11px;
+        .img {
+          aspect-ratio: 1.05;
+          object-fit: auto;
+          object-position: center;
+          width: 37px;
+        }
+        .small-card-div-3 {
+          font-family: Poppins, sans-serif;
+          margin: auto 0;
+        }
+      }
+    
+      .small-card-div-4 {
+        border-radius: 2px;
+        border-color: rgba(58, 124, 237, 1);
+        border-style: solid;
+        border-width: 1px;
+        background-color: #f5f5f5;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 8px 11px;
+        .img-2 {
+          aspect-ratio: 1.11;
+          object-fit: auto;
+          object-position: center;
+          width: 39px;
+        }
+        .small-card-div-5 {
+          font-family: Poppins, sans-serif;
+          margin: auto 0;
+        }
+      }
+     
+      .small-card-div-6 {
+        border-radius: 2px;
+        border-color: rgba(58, 124, 237, 1);
+        border-style: solid;
+        border-width: 1px;
+        background-color: #f5f5f5;
+        display: flex;
+        gap: 5px;
+        font-weight: 300;
+        width: 10.5rem;
+        padding: 8px 11px;
+        .img-3 {
+          aspect-ratio: 1.25;
+          object-fit: auto;
+          object-position: center;
+          width: 44px;
+        }
+      }
+      .small-card-div-7 {
+        font-family: Poppins, sans-serif;
+      }
+    }
+   
+    
+  
+  
+    
+  
+  
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .div {
       max-width: 816px;
     }
@@ -778,8 +881,6 @@
     .div-8 {
       font-family: Poppins, sans-serif;
     }
- 
- 
   }
   .footer-styles {
     position: fixed;
